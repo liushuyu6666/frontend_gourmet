@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Menus from "./Component/Menus";
-import Landing from "./Component/Landing";
+import Home from "./Component/Home";
 import Login from "./Component/Login";
 import {
     BrowserRouter as Router,
@@ -20,7 +20,7 @@ function App() {
       <Router>
           <Switch>
               <Router path="/" exact>
-                  <Landing/>
+                  <Home/>
               </Router>
               <Router path="/menu">
                   <Menus/>

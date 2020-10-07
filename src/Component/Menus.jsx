@@ -36,10 +36,6 @@ class Menus extends Component{
     }
 
 
-    componentDidMount() {
-        fetch()
-    }
-
 }
 
 export default Menus

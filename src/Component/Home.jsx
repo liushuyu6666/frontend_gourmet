@@ -206,7 +206,7 @@ function MenuSection(props){
     )
 }
 
-class Landing extends Component{
+class Home extends Component{
     constructor(props) {
         super(props);
         this.state = {
@@ -250,4 +250,4 @@ class Landing extends Component{
 }
 
 
-export default Landing;
+export default Home;
