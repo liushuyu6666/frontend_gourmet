@@ -1,0 +1,9 @@
+.row{
+    margin-top: 10px;
+}
+
+.carousel-inner > .carousel-item >img{
+    height : 100px;
+    height : 100px;
+    width : 100%;
+}
