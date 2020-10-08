@@ -15,9 +15,9 @@ class Profile extends Component{
         this.props.history.push("/login");
     }
 
-    menu = (event) =>{
+    landing = (event) =>{
         event.preventDefault();
-        this.props.history.push("/menu");
+        this.props.history.push("/landing");
     }
 
     render() {
@@ -60,7 +60,7 @@ class Profile extends Component{
                 </div>
                 <button type="submit" className="btn btn-primary">Submit</button>
                 <button type="submit" className="btn btn-danger" onClick={this.logout}>Logout</button>
-                <button type="submit" className="btn btn-primary" onClick={this.menu}>Manage Menu</button>
+                <button type="submit" className="btn btn-primary" onClick={this.landing}>Manage Landing</button>
             </form>
         )
     }

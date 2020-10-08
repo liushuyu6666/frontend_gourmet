@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Menus from "./Component/Menus";
+import Landing from "./Component/Landing"
 import Home from "./Component/Home";
 import Login from "./Component/Login";
 import {
@@ -19,12 +20,15 @@ function App() {
     // </div>
       <Router>
           <Switch>
-              <Router path="/" exact>
+              <Route path="/" exact>
                   <Home/>
-              </Router>
-              <Router path="/menu">
+              </Route>
+              <Route path="/landing" exact>
+                  <Landing/>
+              </Route>
+              <Route path="/landing/:landing_id/menu/edit">
                   <Menus/>
-              </Router>
+              </Route>
           </Switch>
       </Router>
   );
